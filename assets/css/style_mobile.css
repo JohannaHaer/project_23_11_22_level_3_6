@@ -1,0 +1,170 @@
+@media only screen and (max-width: 600px) {
+
+    /* Grid Area on Nav-Bar and Display Grid for li-elements */
+
+    .navFont {
+    font-size: 0.625rem;
+    }
+
+    header nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "li1" 
+    "li2" 
+    "li3";
+    gap: 0.2rem;
+    }
+
+    header nav li:nth-of-type(1) {
+        grid-area: li1;
+        justify-self: end;
+    }
+    
+    header nav li:nth-of-type(2) {
+        grid-area: li2;
+        justify-self: end;
+    }
+    
+    header nav li:nth-of-type(3) {
+        grid-area: li3;
+        justify-self: end;
+    }
+    
+    /* Resizing of images */
+
+    img {
+        width: 100%;
+        height: 50vh;
+    }
+    
+    /* Grid on Sections with 6 images all among each other */
+
+    .section6Img {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, max-content);
+        grid-template-areas: 
+        "article1" 
+        "article2" 
+        "article3"
+        "article4" 
+        "article5" 
+        "article6";
+        gap: 2rem;
+    }
+    
+    .article1 {
+        grid-area: article1;
+    }
+    
+    .article2 {
+        grid-area: article2;
+    }
+    
+    .article3 {
+        grid-area: article3;
+    }
+    
+    .article4 {
+        grid-area: article4;
+    }
+    
+    .article5 {
+        grid-area: article5;
+    }
+    
+    .article6 {
+        grid-area: article6;
+    }
+    
+    /* Grid on Sections with 3 images all among each other */
+    
+    .section3Img {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, max-content);
+        grid-template-areas: 
+        "article1"
+        "article2"
+        "article3";
+        gap: 2rem;
+    }
+    
+    .article1 {
+        grid-area: article1;
+    }
+    
+    .article2 {
+        grid-area: article2;
+    }
+    
+    .article3 {
+        grid-area: article3;
+    }
+
+    /* Grid on footer */
+
+    footer {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, max-content);
+        grid-template-areas: 
+        "shop contact"
+        "founder contactOpt" 
+        "newsletter socialM"
+        "getInTouch socialMChan"
+        "copyright .";
+        gap: 1rem 2rem;
+    }
+    
+    .shop {
+        grid-area: shop;
+    }
+    
+    .contact {
+        grid-area: contact;
+    }
+    
+    .newsletter {
+        grid-area: newsletter;
+    }
+    
+    .socialM {
+        grid-area: socialM;
+        justify-self: start;
+    }
+    
+    .founder {
+        grid-area: founder;
+    }
+    
+    .contactOpt {
+        grid-area: contactOpt;
+    }
+    
+    .getInTouch {
+        grid-area: getInTouch;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, max-content);
+        grid-template-areas:
+        "subscribe1"
+        "subscribe2";
+    }
+    
+    .subscribe1 {
+        grid-area: subscribe1;
+    }
+    
+    .subscribe2 {
+        grid-area: subscribe2;
+    }
+    
+    .socialMChan {
+        grid-area: socialMChan;
+        justify-self: start;
+    }
+
+}
