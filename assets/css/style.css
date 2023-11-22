@@ -31,19 +31,19 @@ html {
     font-family: 'Karla';
 }
 
+/* a-tags with the same font-color dark gray */
+
 a {
     color: var(--font-color-dark-gray);
 }
 
-/* Font-Styling of Nav */
+/* Font-Styling of nav, main and footer p-tags */
 
 .navFont {
     text-transform: uppercase;
     font-size: var(--font-size-nav);
     font-weight: 700;
 }
-
-/* Font-Styling of Main: bold parts */
 
 .pFontBold {
     font-size: var(--font-size-main-p);
@@ -52,8 +52,6 @@ a {
     color: var(--font-color-black);
 }
 
-/* Font-Styling of Main: light parts */
-
 .pFontLight {
     font-size: var(--font-size-main-p);
     font-weight: 400;
@@ -61,15 +59,11 @@ a {
     color: var(--font-color-light-gray);
 }
 
-/* Font-Styling of Footer: bold parts */
-
 .pFooterBold {
     font-size: var(--font-size-footer-p-title);
     font-weight: 700;
     color: var(--font-color-black);
 }
-
-/* Font-Styling of Footer: medium parts */
 
 .pFooterMedium {
     font-size: var(--font-size-footer-p1);
@@ -78,18 +72,24 @@ a {
     color: var(--font-color-black);
 }
 
-/* Font-Styling of Footer: light parts */
-
 .pFooterLight {
     font-size: var(--font-size-footer-p2);
     font-weight: 400;
     color: var(--font-color-dark-gray);
 }
 
+/* Sizing of alle images */
+
 img {
     width: 100%;
     height: max-content;
     object-fit: cover;
+}
+
+/* Hover effect on all images */
+
+img:hover {
+    opacity: 0.5;
 }
 
 /* Padding for the entire body */
@@ -98,7 +98,7 @@ body {
     padding: 0 2rem 1rem 2rem;
 }
 
-/*  Display Grid for Body */
+/*  Display Grid for header */
 
 header {
     display: grid;
@@ -141,6 +141,8 @@ header nav li:nth-of-type(3) {
     grid-area: li3;
     justify-self: end;
 }
+
+/* Grid on main sections */
 
 main {
     display: grid;
@@ -288,11 +290,7 @@ main {
     grid-area: company;
 }
 
-img:hover {
-    opacity: 0.5;
-}
-
-/* Footer */
+/* Grid on footer */
 
 footer {
     margin-top: 2rem;
@@ -349,7 +347,6 @@ footer {
     grid-area: subscribe2;
 }
 
-
 .socialMChan {
     grid-area: socialMChan;
     justify-self: center;
@@ -364,6 +361,7 @@ footer {
     grid-area: copyright;
 }
 
+/* Styling of span in footer vom 700 to 800 font weight */
 
 span {
     font-weight: 800;
