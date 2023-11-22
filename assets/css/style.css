@@ -101,11 +101,15 @@ body {
 /*  Display Grid for header */
 
 header {
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 15vh;
     grid-template-areas: "h1 . nav";
     align-items: center;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
 }
 
 /* Font-Styling of H1 and Grid-Area h1 */
