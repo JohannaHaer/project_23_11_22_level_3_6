@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 @font-face {
@@ -29,22 +31,12 @@ html {
     font-family: 'Karla';
 }
 
-/* Font-Styling of H1 */
-
-h1 {
-    text-transform: uppercase;
-    font-size: var(--font-size-h1);
-    font-weight: 700;
-    color: var(--font-color-dark-gray);
-}
-
 /* Font-Styling of Nav */
 
 .navFont {
     text-transform: uppercase;
     font-size: var(--font-size-nav);
     font-weight: 700;
-    color: var(--font-color-dark-gray);
 }
 
 /* Font-Styling of Main: bold parts */
@@ -98,8 +90,57 @@ h1 {
     color: var(--font-color-light-gray);
 }
 
+/* Padding for the entire body */
+
+body {
+    padding: 1rem 2rem;
+}
+
 /*  Display Grid for Body */
 
 header {
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 7vh;
+    grid-template-areas: "h1 . nav";
+    align-items: center;
 }
+
+/* Font-Styling of H1 and Grid-Area h1 */
+
+h1 {
+    text-transform: uppercase;
+    font-size: var(--font-size-h1);
+    font-weight: 700;
+    color: var(--font-color-dark-gray);
+    grid-area: h1;
+}
+
+/* Grid Area on Nav-Bar and Display Grid for li-elements */
+
+nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: "li1 li2 li3";
+}
+
+nav li:nth-of-type(1) {
+    grid-area: li1;
+    justify-self: end;
+}
+
+nav li:nth-of-type(2) {
+    grid-area: li2;
+    justify-self: end;
+}
+
+nav li:nth-of-type(3) {
+    grid-area: li3;
+    justify-self: end;
+}
+
+nav li a {
+    color: var(--font-color-dark-gray);
+}
+
